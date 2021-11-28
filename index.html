@@ -45,11 +45,11 @@
         if(a==b)
         {
           alert("今天已打卡");
-          document.getElementById("ljdk").src='image2.png';
         }
         else
         {
-          localStorage.lastname = b;
+        localStorage.lastname = b;
+        document.getElementById("ljdk").src='image2.png';
         var sjs=Math.ceil(Math.random()*10);
         if(sjs==0)
         {
