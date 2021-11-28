@@ -51,7 +51,7 @@
         {
         localStorage.lastname = b;
         document.getElementById("ljdk").src='image2.png';
-        var sjs=Math.ceil(Math.random()*10);
+        var sjs=Math.ceil(Math.random()*13);
         if(sjs==0)
         {
           document.getElementById("h").innerHTML='你的运气好到爆炸！';
@@ -95,6 +95,20 @@
         if(sjs==10)
         {
           document.getElementById("h").innerHTML='今天适合倒霉!';
+        }
+        if(sjs==11)
+        {
+          document.getElementById("h").innerHTML='今天写代码忘记保存!';
+        }
+        if(sjs==12)
+        {
+          document.getElementById("h").innerHTML='今天会有惊喜/惊吓';
+        }
+        if(sjs==13)
+        {
+          document.getElementById("h").innerHTML='赢得再来一次的机会!';
+          document.getElementById("ljdk").src='image.png';
+          localStorage.lastname = 1;
         }
         }
       }
