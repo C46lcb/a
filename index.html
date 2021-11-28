@@ -42,6 +42,7 @@
         var username=document.getElementById("name").value;
         document.getElementById("name").hidden='hiddlen';
         document.getElementById("btn").hidden='hiddlen';
+        document.getElementById("namee").hidden='hiddlen';
         alert("欢迎!"+username);
         localStorage.dl=1;
         localStorage.username=a;
@@ -51,6 +52,7 @@
         var username=document.getElementById("name");
         document.getElementById("name").hidden='';
         document.getElementById("btn").hidden='';
+        document.getElementById("namee").hidden='';
       }
       function dk()
       {
@@ -145,7 +147,9 @@
         <br />
         <br />
         <br />
-        <input hidden="hidden" type="input" id="name" value="输入你的名字"/>
+        <div hidden="hidden" id="namee">
+        输入你的名字:<input type="input" id="name" value=""/>
+        </div>
         <br />
         <image src="image3.png" id="btn" hidden="hidden" width=100px onclick="dl()"/>
         <br />
