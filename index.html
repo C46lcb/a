@@ -39,15 +39,15 @@
     <script>
       function dk()
       {
+        var b=new Date();
         var a=localStorage.lastname;
-        if(a==1)
+        if(a==b)
         {
           alert("今天已打卡");
         }
         else
         {
-          localStorage.lastname = 1;
-        }
+          localStorage.lastname = b;
         var sjs=Math.ceil(Math.random()*10);
         if(sjs==0)
         {
@@ -92,6 +92,7 @@
         if(sjs==10)
         {
           document.getElementById("h").innerHTML='今天适合倒霉!';
+        }
         }
       }
     </script>
