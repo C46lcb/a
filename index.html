@@ -39,7 +39,7 @@
     <script>
       function dk()
       {
-        var sjs=Math.ceil(Math.random()*5);
+        var sjs=Math.ceil(Math.random()*10);
         if(sjs==0)
         {
           document.getElementById("h").innerHTML='你的运气好到爆炸！';
@@ -64,6 +64,26 @@
         {
           document.getElementById("h").innerHTML='走路捡到钱!';
         }
+        if(sjs==6)
+        {
+          document.getElementById("h").innerHTML='今天考试作弊会被抓!';
+        }
+        if(sjs==7)
+        {
+          document.getElementById("h").innerHTML='不要装逼!';
+        }
+        if(sjs==8)
+        {
+          document.getElementById("h").innerHTML='今天什么都不会发生';
+        }
+        if(sjs==9)
+        {
+          document.getElementById("h").innerHTML='你今天会很无聊!';
+        }
+        if(sjs==10)
+        {
+          document.getElementById("h").innerHTML='今天适合倒霉!';
+        }
       }
     </script>
     <div class="wrapper">
@@ -75,7 +95,7 @@
         <br />
         <br />
         <h1 id="h"></h1>
-        <input type="button" class="btn" value="打卡" onclick="dk()"/>
+        <image src="image.png" onclick="dk()"/>
       </header>
       <section>
       <h2 id="welcome-to-github-pages">Welcome to HC!</h2>
