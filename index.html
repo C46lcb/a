@@ -37,11 +37,28 @@
   </head>
   <body id="by" style="">
     <script>
+      function dl()
+      {
+        var username=document.getElementById("name").value;
+        document.getElementById("name").hidden='';
+        document.getElementById("btn").hidden='';
+        alert("欢迎!"+username);
+        localStorage.dl=1;
+        localStorage.username=a;
+      }
+      function dll()
+      {
+        var username=document.getElementById("name");
+        document.getElementById("name").hidden='hidden';
+        document.getElementById("btn").hidden='hidden';
       function dk()
       {
         var c=new Date();
+        var d=localStorage.dl;
         var b=c.getDate();
         var a=localStorage.lastname;
+        if(d==1)
+        {
         if(a==b)
         {
           document.getElementById("ljdk").src='image2.png';
@@ -111,14 +128,25 @@
           localStorage.lastname = 1;
         }
         }
+        }
+        else
+        {
+        document.getElementById("h").innerHTML='请先登录';
+        }
       }
     </script>
     <div class="wrapper">
       <header>
-        <a href="ts.html">登录</a>
+        <a href="javascript:dl()">登录</a>
         <image id="ico" src="ico2.jpg" href="index.html"/>
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <input hidden="hidden" type="input" id="name" value="输入你的名字"/>
+        <br />
+        <input hidden="hidden" type="button" id="btn" value="登录"/>
         <br />
         <br />
         <br />
