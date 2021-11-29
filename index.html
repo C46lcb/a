@@ -37,7 +37,13 @@
   </head>
   <body id="by" style="">
     <script>
-      var e=ner Date();
+      function dl()
+      {
+        var username=document.getElementById("name").value;
+        document.getElementById("name").hidden='hiddlen';
+        document.getElementById("btn").hidden='hiddlen';
+        document.getElementById("namee").hidden='hiddlen';
+        var e=ner Date();
       var year=e.getFullYear();
       var month=e.getMonth();
       if(month==0)
@@ -47,13 +53,6 @@
       var day=e.getDate();
       var datew=year+'年'+month+'月'+day'日';
       document.getElementById("p").innerHTML=datew;
-      function dl()
-      {
-        var username=document.getElementById("name").value;
-        document.getElementById("name").hidden='hiddlen';
-        document.getElementById("btn").hidden='hiddlen';
-        document.getElementById("namee").hidden='hiddlen';
-        alert("欢迎!"+username);
         localStorage.dl=1;
         localStorage.username=a;
         document.getElementById("hh").innerHTML='你好,'+username;
