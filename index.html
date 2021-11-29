@@ -37,6 +37,12 @@
   </head>
   <body id="by" style="">
     <script>
+      function tcdl()
+      {
+        localStorage.username=0;
+        document.getElementById("hhh").innerHTML='未登录';
+        document.getElementById("pd").innerHTML='';
+      }
       function dl()
       {
         var username=document.getElementById("name").value;
@@ -66,6 +72,10 @@
         var d=localStorage.dl;
         var b=c.getDate();
         var a=localStorage.lastname;
+        if(d!=1)
+        {
+          document.getElementById("h").innerHTML='请先登录';
+        }
         if(d==1)
         {
         if(a==b)
@@ -146,7 +156,8 @@
     </script>
     <div class="wrapper">
       <header>
-        <a href="javascript:dll()">登录</a>
+        <span><a href="javascript:dll()">登录</a></span>
+        <span><a href="javascript:tcdl()">退出登录</a></span>
         <img src="ico2.jpg"/>
         <br />
         <br />
