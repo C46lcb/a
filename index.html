@@ -44,15 +44,15 @@
         document.getElementById("btn").hidden='hiddlen';
         document.getElementById("namee").hidden='hiddlen';
         var e=ner Date();
-      var year=e.getFullYear();
-      var month=e.getMonth();
-      if(month==0)
-      {
+        var year=e.getFullYear();
+        var month=e.getMonth();
+        if(month==0)
+        {
         month=12;
-      }
-      var day=e.getDate();
-      var datew=year+'年'+month+'月'+day'日';
-      document.getElementById("p").innerHTML=datew;
+        }
+        var day=e.getDate();
+        var datew=year+'年'+month+'月'+day'日';
+        document.getElementById("p").innerHTML=datew;
         localStorage.dl=1;
         localStorage.username=a;
         document.getElementById("hh").innerHTML='你好,'+username;
@@ -151,12 +151,12 @@
     <div class="wrapper">
       <header>
         <a href="javascript:dll()">登录</a>
-        <img width=200px src="ico2.jpg"/>
+        <img src="ico2.jpg"/>
         <br />
         <br />
         <br />
         <div hidden="hidden" id="namee">
-        输入你的名字:<input type="input" id="name" value=""/>
+        输入你的名字:<input hiddlen='hiddlen' type="input" id="name" value=""/>
         </div>
         <br />
         <image src="image3.png" id="btn" hidden="hidden" width=100px onclick="dl()"/>
