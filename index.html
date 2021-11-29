@@ -47,6 +47,12 @@
         localStorage.username=username;
         var word='你好! '+username;
         document.getElementById("hhh").innerHTML=word;
+        var newdate=new Date();
+        var day=newdate.getDate();
+        var month=newdate.getMonth();
+        var year=newdate.getFullYear();
+        var dateword=year+'年'+month+'月'+day+'日';
+        document.getElementById("pd").innerHTML=dateword;
       }
       function dll()
       {
@@ -157,6 +163,7 @@
         <image id="ljdk" src="image.png" width=100px onclick="dk()"/>
       </header>
       <section>
+        <p id="pd"></p>
         <h2 id="hhh">未登录</h2>
         <br />
         <hr />
